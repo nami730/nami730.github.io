@@ -1,0 +1,577 @@
+@charset "utf-8";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.my-40 {
+  margin: 40px 0;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+body {
+  background-color: #fff8de;
+  color: #7E4C00;
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-family: 'Zen Maru Gothic', serif;
+}
+
+a {
+  color: #7E4C00;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*ヘッダー*/
+
+header {
+  display: flex;
+  border-top: 10px solid #92d460;
+  padding: 10px 0;
+}
+
+header .logo {
+  margin-left: 1%;
+  width: 170px;
+  height: auto;
+}
+
+header .contact {
+  background-color: #FAC249;
+  width: 150px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  right: 1%;
+}
+
+header .contact:hover {
+  background-color: #fdce6b;
+}
+
+header .contact p {
+  text-align: center;
+  line-height: 70px;
+}
+
+header .contact a {
+  color: #fff;
+}
+
+header .contact p::before {
+  content: url(img/contact-img.png);
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+.tel:hover {
+  opacity: 0.9;
+}
+
+header nav {
+  padding: 24px 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+header nav li {
+  font-family: 'Dancing Script', cursive;
+  font-family: 'Zen Kurenaido', sans-serif;
+  font-family: 'Zen Maru Gothic', serif;
+  list-style-type: none;
+  font-size: 1.3rem;
+}
+
+header nav li+li {
+  border-left: 2px dotted #92d460;
+}
+
+header nav a {
+  padding: 10px 19px;
+  color: #7E4C00;
+  transition: 0.5s;
+}
+
+header nav a:hover {
+  opacity: 0.6;
+}
+
+#mv .sp-mv {
+  display: none;
+}
+
+main>*+* {
+  margin-top: 80px;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 80px 0;
+}
+
+/*about*/
+
+#about>*+* {
+  margin-top: 40px;
+}
+
+#about .section-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#about .itembox-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+#about .itembox-list .text {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+#about .itembox {
+  position: relative;
+}
+
+#about .itembox p {
+  background-color: #92d460;
+  color: #fff;
+  margin-top: 5px;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+#about .itembox:nth-child(even) p {
+  background-color: #FAC249;
+}
+
+#about .text-wrapper .text {
+  text-align: center;
+  font-size: 1.2rem;
+  width: 40em;
+  margin: auto;
+}
+
+#about .itembox p:last-child {
+  font-size: 1.5rem;
+  padding: 10px 10px;
+}
+
+
+
+/*お知らせ*/
+#info-blog {
+  display: flex;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(212, 206, 182, 1.00);
+  box-shadow: 0px 0px 10px rgba(212, 206, 182, 1.00);
+}
+
+#info-blog .section-title {
+  text-align: center;
+  padding: 20px;
+}
+
+.info, .blog {
+  width: 50%;
+  padding: 40px;
+}
+
+#info-blog .btn {
+  font-size: 1rem;
+  border: 2px solid #000;
+  border-radius: 30px;
+  text-align: center;
+  padding: 5px 10px;
+  position: relative;
+  bottom: 0;
+  box-shadow: 0px 4px 3px #bebebe;
+  transform: scale(0.95);
+  transition: 0.2s;
+}
+
+#info-blog .btn:hover {
+  box-shadow: none;
+}
+
+.info-box, .blog-box {
+  margin-top: 30px;
+}
+
+/*日付太字*/
+.info dt, .blog span {
+  font-weight: bold;
+  font-size: 0.9rem;
+  background-color: rgba(146, 212, 96, 0.4);
+  width: fit-content;
+  padding: 0 5px;
+}
+
+.info dd {
+  border-bottom: 1px solid #C1C1C1;
+  padding-bottom: 10px;
+  margin: 10px 0;
+}
+
+.blog .item {
+  width: 40%;
+  margin-right: 10px;
+}
+
+.blog .text {
+  width: 60%;
+}
+
+.blog img {
+  width: 100%;
+  height: auto;
+}
+
+.blog .itembox {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/*営業時間*/
+table {
+  height: fit-content;
+  font-size: 1.25rem;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table th {
+  color: #fff;
+  background-color: #92d460;
+  text-align: center;
+  padding: 10px 0;
+}
+
+table td {
+  background-color: #fff;
+  color: #92d460;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 15px;
+
+}
+
+table td:first-of-type {
+  color: #7E4C00;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+table span {
+  color: #B0B0B0;
+}
+
+#time .wrapper {
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+p .banner {
+  border-radius: 100px;
+  display: flex;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+/*背景*/
+.bg {
+  background-image: url(img/bg01.png);
+}
+
+/*お問い合わせ*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  background-image: url(img/bg01.png);
+  background-size: cover;
+  background-position: bottom;
+  padding: 40px 0;
+}
+
+#tel {
+  background-color: #fff;
+  width: 60%;
+  border-radius: 20px;
+  color: #FAC249;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#tel .text {
+  font-size: 1.125rem;
+
+}
+
+#tel .number {
+  font-size: 3.5rem;
+}
+
+#tel .number::before {
+  content: url("img/phone-solid-120.png");
+}
+
+#tel .time {
+  color: #fff;
+  background-color: #FAC249;
+  width: fit-content;
+  margin: auto;
+  padding: 0 20px;
+  border-radius: 30px;
+}
+
+/*リクルート*/
+#recruit {
+  width: 70%;
+  margin: auto;
+}
+
+
+
+#recruit img:hover {
+  opacity: 0.9;
+}
+
+#gotop {
+  width: 70px;
+  height: auto;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+/*フッター*/
+footer {
+  background-color: #92d460;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  color: #fff;
+  padding: 30px 0;
+  font-size: 1.25rem;
+}
+
+footer .box ul {
+  display: flex;
+  flex-direction: column;
+}
+
+footer nav {
+  display: flex;
+}
+
+footer .logo {
+  width: 200px;
+  height: auto;
+}
+
+footer .facility h4 {
+  border-bottom: 1px solid #fff;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+
+  header .logo {
+    width: 150px;
+    height: auto;
+  }
+
+  header .contact {
+    width: 140px;
+    height: 65px;
+  }
+
+  header .contact p {
+    line-height: 65px;
+  }
+
+  header nav {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  header .logo {
+    width: 130px;
+    height: auto;
+  }
+
+  header .contact {
+    display: none;
+  }
+
+  .nav-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    background-color: #FAC249;
+  }
+
+  .nav-button span {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    left: 15px;
+    transition: 0.5s;
+  }
+
+  .nav-button span:nth-child(1) {
+    top: 12px;
+  }
+
+  .nav-button span:nth-child(2) {
+    top: 23px;
+  }
+
+  .nav-button span:nth-child(3) {
+    top: 34px;
+  }
+
+  #mv .pc-mv {
+    display: none;
+  }
+
+  #mv .sp-mv {
+    display: block;
+  }
+
+  main {
+    padding: 40px 0 0;
+  }
+
+  main>*+* {
+    margin-top: 40px;
+  }
+
+  #about .itembox-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  #about .itembox {
+    width: 70%;
+  }
+
+  #about .text-wrapper .text {
+    text-align: center;
+    font-size: 1rem;
+    width: 20em;
+  }
+
+  #about .itembox p:last-child {
+    font-size: 1.15rem;
+  }
+
+  #info-blog {
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  #info-blog .info, .blog {
+    width: 80%;
+    padding: 20px 0;
+    margin: auto;
+  }
+
+  #info-blog .info dt, .blog span {
+    font-size: 0.9rem;
+  }
+
+  #info-blog .info dd, .blog .text {
+    font-size: 0.85rem;
+  }
+
+
+  #time .wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #time table {
+    font-size: 1rem;
+  }
+
+  table td:first-of-type {
+    font-size: 0.9rem;
+  }
+
+  table td {
+    padding: 20px 5px;
+  }
+
+  #tel {
+    width: 80%;
+  }
+
+  #tel .text {
+    font-size: 1.125rem;
+
+  }
+
+  #tel .number {
+    font-size: 2rem;
+  }
+
+  #tel .number::before {
+    display: none;
+  }
+
+  #recruit {
+    width: 90%;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  footer .logo {
+    width: 30%;
+  }
+
+  footer nav {
+    font-size: 1.125rem;
+  }
+}
