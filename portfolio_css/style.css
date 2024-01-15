@@ -53,7 +53,7 @@ nav a:hover {
 .section-title {
     font-size: 2.75rem;
     line-height: 1em;
-    padding-left: 100px;
+    text-align: center;
     color: #707070;
     font-family: 'Kiwi Maru', serif;
 }
@@ -65,9 +65,6 @@ nav a:hover {
         height: auto;
     }
 
-    .section-title {
-        padding-left: 50px;
-    }
 }
 
 span {
@@ -95,16 +92,13 @@ footer a {
     display: block;
 }
 
-.container {
-    padding-top: 100px;
-}
 
 .bg img {
     width: 100%;
 }
 
 .mv {
-    height: 70vh;
+    height: 100vh;
     display: grid;
 
 }
@@ -117,16 +111,8 @@ footer a {
     place-self: center;
 }
 
-.about-header {
-    display: grid;
-}
-
-.about-header>* {
-    grid-area: 1/1;
-}
-
-.about-header .bg {
-    display: flex;
+.section-title {
+    margin-bottom: 50px;
 }
 
 .about .container {
@@ -138,6 +124,10 @@ footer a {
 .about .container p {
     width: 50%;
     padding-bottom: 30px;
+}
+
+.about img {
+    vertical-align: bottom;
 }
 
 @media screen and (max-width: 800px) {
@@ -245,8 +235,8 @@ h2 {
 
 .works .item-box {
     background-color: #fff;
-    padding: 48px 32px;
-    border-radius: 38px;
+    padding: 30px 32px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 1em;
